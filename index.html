@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HADIDJA SHOP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <!-- LOGO: СЮДА ПОСТАВИТЬ ТВОЙ ЛОГОТИП: images/logo.png -->
+        <a class="logo" href="#home">
+          <img
+            src="images/logo.png"
+            alt="HADIDJA SHOP"
+            onerror="this.style.display = 'none'"
+          />
+          <span>HADIDJA <small>SHOP</small></span>
+        </a>
+
+        <nav id="navMenu">
+          <a href="#home">Главная</a>
+          <a href="#categories">Категории</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#dresses">Платья</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="searchOpen" aria-label="Поиск">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="icon-btn" id="favoritesOpen" aria-label="Избранное">
+            <i class="fa-regular fa-heart"></i><b id="favoriteCount">0</b>
+          </button>
+          <button class="icon-btn" id="cartOpen" aria-label="Корзина">
+            <i class="fa-solid fa-bag-shopping"></i><b id="cartCount">0</b>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="Меню">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==================== ГЛАВНЫЙ ЭКРАН ==================== -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">HADIDJA SHOP · DUSHANBE</p>
+            <h1>Красота<br /><em>в деталях.</em></h1>
+            <p class="hero-description">
+              Платки, шарфы, хиджабы и платья для красивого и элегантного
+              образа.
+            </p>
+
+            <div class="buttons">
+              <a class="btn dark" href="#catalog"
+                >Смотреть коллекцию <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <!-- WHATSAPP: +992 88 600 65 28 -->
+              <a
+                class="btn light"
+                href="https://wa.me/992886006528"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+
+            <div class="mini-features">
+              <span>✦ Premium Quality</span>
+              <span>✦ Быстрый заказ</span>
+              <span>✦ Душанбе</span>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <!-- ГЛАВНОЕ ФОТО: images/hero.jpg — сюда поставить красивое фото модели/товара -->
+            <img src="images/hero.jpg" alt="HADIDJA SHOP" />
+            <div class="floating-card">
+              <small>NEW COLLECTION</small>
+              <strong>Новая коллекция</strong>
+              <a href="#catalog">Смотреть →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== О МАГАЗИНЕ ==================== -->
+      <section class="section about">
+        <div class="container about-grid">
+          <div class="about-photo">
+            <!-- ФОТО О МАГАЗИНЕ: images/about.jpg -->
+            <img src="images/about.jpg" alt="HADIDJA SHOP" />
+          </div>
+          <div>
+            <p class="eyebrow">О HADIDJA SHOP</p>
+            <h2>Стиль, который<br /><em>остаётся с вами.</em></h2>
+            <p class="muted">
+              Красивые платки, шарфы, хиджабы и платья. Выбирайте товар,
+              смотрите фотографии и оформляйте заказ напрямую через WhatsApp.
+            </p>
+            <a class="text-link" href="#catalog"
+              >Перейти к товарам <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== КАТЕГОРИИ ==================== -->
+      <section class="section categories" id="categories">
+        <div class="container">
+          <div class="heading">
+            <p class="eyebrow">КАТЕГОРИИ</p>
+            <h2>Выберите свой стиль</h2>
+          </div>
+
+          <div class="category-grid">
+            <button class="category-card" data-category="Платки">
+              <!-- ФОТО КАТЕГОРИИ ПЛАТКИ: images/category-scarves.jpg -->
+              <img src="images/category-scarves.jpg" alt="Платки" />
+              <span>Платки <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+
+            <button class="category-card" data-category="Шарфы">
+              <!-- ФОТО КАТЕГОРИИ ШАРФЫ: images/category-shawls.jpg -->
+              <img src="images/category-shawls.jpg" alt="Шарфы" />
+              <span>Шарфы <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+
+            <button class="category-card" data-category="Хиджабы">
+              <!-- ФОТО КАТЕГОРИИ ХИДЖАБЫ: images/category-hijab.jpg -->
+              <img src="images/category-hijab.jpg" alt="Хиджабы" />
+              <span>Хиджабы <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+
+            <button class="category-card" data-category="Платья">
+              <!-- ФОТО КАТЕГОРИИ ПЛАТЬЯ: images/category-dresses.jpg -->
+              <img src="images/category-dresses.jpg" alt="Платья" />
+              <span>Платья <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== КАТАЛОГ ==================== -->
+      <section class="section catalog" id="catalog">
+        <div class="container">
+          <div class="catalog-top">
+            <div>
+              <p class="eyebrow">COLLECTION</p>
+              <h2>Наш каталог</h2>
+            </div>
+
+            <div class="controls">
+              <label class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  id="productSearch"
+                  type="search"
+                  placeholder="Поиск товара..."
+                />
+              </label>
+
+              <select id="sortSelect">
+                <option value="default">Сортировка</option>
+                <option value="cheap">Сначала дешевле</option>
+                <option value="expensive">Сначала дороже</option>
+                <option value="discount">По скидке</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filters">
+            <button class="filter active" data-filter="Все">Все</button>
+            <button class="filter" data-filter="Платки">Платки</button>
+            <button class="filter" data-filter="Шарфы">Шарфы</button>
+            <button class="filter" data-filter="Хиджабы">Хиджабы</button>
+            <button class="filter" data-filter="Платья">Платья</button>
+            <button class="filter" data-filter="Скидки">Скидки</button>
+          </div>
+
+          <div class="products" id="products"></div>
+          <p class="empty" id="emptyProducts">Товаров не найдено.</p>
+        </div>
+      </section>
+
+      <!-- ==================== ОТДЕЛЬНАЯ СЕКЦИЯ ПЛАТЬЯ ==================== -->
+      <section class="section dresses" id="dresses">
+        <div class="container">
+          <div class="heading-row">
+            <div>
+              <p class="eyebrow">DRESS COLLECTION</p>
+              <h2>Платья</h2>
+              <p class="muted">Отдельная коллекция платьев HADIDJA SHOP.</p>
+            </div>
+            <a class="btn dark" href="#contacts">Узнать о наличии</a>
+          </div>
+
+          <div class="dress-grid">
+            <article class="dress-card">
+              <!-- ФОТО ПЛАТЬЯ №1: images/dress-01.jpg -->
+              <img src="images/dress-01.jpg" alt="Платье №1" />
+              <div class="dress-info">
+                <p class="dress-label">DRESS 01</p>
+                <h3>Элегантное платье</h3>
+                <span>Цена будет добавлена</span>
+              </div>
+            </article>
+
+            <article class="dress-card">
+              <!-- ФОТО ПЛАТЬЯ №2: images/dress-02.jpg -->
+              <img src="images/dress-02.jpg" alt="Платье №2" />
+              <div class="dress-info">
+                <p class="dress-label">DRESS 02</p>
+                <h3>Платье Premium</h3>
+                <span>Цена будет добавлена</span>
+              </div>
+            </article>
+
+            <article class="dress-card">
+              <!-- ФОТО ПЛАТЬЯ №3: images/dress-03.jpg -->
+              <img src="images/dress-03.jpg" alt="Платье №3" />
+              <div class="dress-info">
+                <p class="dress-label">DRESS 03</p>
+                <h3>Новая модель</h3>
+                <span>Цена будет добавлена</span>
+              </div>
+            </article>
+
+            <article class="dress-card">
+              <!-- ФОТО ПЛАТЬЯ №4: images/dress-04.jpg -->
+              <img src="images/dress-04.jpg" alt="Платье №4" />
+              <div class="dress-info">
+                <p class="dress-label">DRESS 04</p>
+                <h3>Limited Collection</h3>
+                <span>Цена будет добавлена</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== АКЦИЯ ==================== -->
+      <section class="promo">
+        <div class="container promo-inner">
+          <div>
+            <p class="eyebrow">SPECIAL OFFER</p>
+            <h2>Особенные цены<br />на выбранные товары</h2>
+          </div>
+          <a href="#catalog" class="btn white"
+            >Смотреть скидки <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- ==================== ОТЗЫВЫ ==================== -->
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="heading center">
+            <p class="eyebrow">ОТЗЫВЫ</p>
+            <h2>Что говорят наши клиенты</h2>
+            <p class="muted">Здесь позже поставим настоящие отзывы.</p>
+          </div>
+
+          <div class="review-grid">
+            <article class="review">
+              <!-- ФОТО ОТЗЫВА №1: если понадобится, images/review-01.jpg -->
+              <div class="stars">★★★★★</div>
+              <p>
+                «Очень красивый платок, качество отличное. Расцветка вживую ещё
+                красивее.»
+              </p>
+              <strong>Клиент HADIDJA</strong>
+            </article>
+
+            <article class="review">
+              <!-- ФОТО ОТЗЫВА №2: images/review-02.jpg -->
+              <div class="stars">★★★★★</div>
+              <p>«Понравился выбор и быстро ответили в WhatsApp. Спасибо!»</p>
+              <strong>Клиент HADIDJA</strong>
+            </article>
+
+            <article class="review">
+              <!-- ФОТО ОТЗЫВА №3: images/review-03.jpg -->
+              <div class="stars">★★★★★</div>
+              <p>
+                «Красивые цвета и аккуратное качество. Обязательно закажу ещё.»
+              </p>
+              <strong>Клиент HADIDJA</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== INSTAGRAM ==================== -->
+      <section class="section instagram">
+        <div class="container">
+          <div class="heading center">
+            <p class="eyebrow">INSTAGRAM</p>
+            <h2>Мы в Instagram</h2>
+            <p class="muted">@hadidja_shop_tj</p>
+          </div>
+
+          <div class="insta-grid">
+            <!-- INSTAGRAM ФОТО №1 -->
+            <img src="images/instagram-01.jpg" alt="HADIDJA Instagram" />
+            <!-- INSTAGRAM ФОТО №2 -->
+            <img src="images/instagram-02.jpg" alt="HADIDJA Instagram" />
+            <!-- INSTAGRAM ФОТО №3 -->
+            <img src="images/instagram-03.jpg" alt="HADIDJA Instagram" />
+            <!-- INSTAGRAM ФОТО №4 -->
+            <img src="images/instagram-04.jpg" alt="HADIDJA Instagram" />
+            <!-- INSTAGRAM ФОТО №5 -->
+            <img src="images/instagram-05.jpg" alt="HADIDJA Instagram" />
+            <!-- INSTAGRAM ФОТО №6 -->
+            <img src="images/instagram-06.jpg" alt="HADIDJA Instagram" />
+          </div>
+
+          <!-- INSTAGRAM: ССЫЛКА ПРОФИЛЯ -->
+          <a
+            class="instagram-btn"
+            href="https://www.instagram.com/hadidja_shop_tj/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i> Открыть Instagram
+          </a>
+        </div>
+      </section>
+
+      <!-- ==================== КОНТАКТЫ ==================== -->
+      <section class="section contacts" id="contacts">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">КОНТАКТЫ</p>
+            <h2>Будем рады<br /><em>вам помочь.</em></h2>
+
+            <div class="contact-list">
+              <!-- АДРЕС: позже сюда поставить точный адрес -->
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span>Адрес</span>
+                  <strong>Душанбе, Таджикистан</strong>
+                </div>
+              </div>
+
+              <!-- WHATSAPP: +992 88 600 65 28 -->
+              <a
+                class="contact-item"
+                href="https://wa.me/992886006528"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                  <span>WhatsApp</span>
+                  <strong>+992 88 600 65 28</strong>
+                </div>
+              </a>
+
+              <!-- INSTAGRAM: @hadidja_shop_tj -->
+              <a
+                class="contact-item"
+                href="https://www.instagram.com/hadidja_shop_tj/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                  <span>Instagram</span>
+                  <strong>@hadidja_shop_tj</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="map">
+            <!-- КАРТА: сюда позже вставить Google / Yandex / 2GIS карту -->
+            <div class="map-placeholder">
+              <i class="fa-solid fa-location-dot"></i>
+              <strong>Здесь будет карта магазина</strong>
+              <span>Адрес добавим позже</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container footer-top">
+        <div class="footer-logo">
+          <!-- LOGO FOOTER: images/logo.png -->
+          <span>HADIDJA <small>SHOP</small></span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Главная</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#dresses">Платья</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+
+        <div class="socials">
+          <!-- INSTAGRAM -->
+          <a
+            href="https://www.instagram.com/hadidja_shop_tj/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- WHATSAPP -->
+          <a
+            href="https://wa.me/992886006528"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 HADIDJA SHOP</div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ==================== КОРЗИНА ==================== -->
+    <aside class="side-panel" id="cartPanel">
+      <div class="panel-head">
+        <h3>Корзина</h3>
+        <button class="close-panel" data-close="cartPanel">×</button>
+      </div>
+      <div class="panel-body" id="cartItems"></div>
+      <div class="panel-footer">
+        <div class="total">
+          <span>Итого:</span><strong id="cartTotal">0 сомони</strong>
+        </div>
+        <a href="#" id="whatsappOrder" class="btn dark full"
+          >Заказать в WhatsApp</a
+        >
+      </div>
+    </aside>
+
+    <!-- ==================== ИЗБРАННОЕ ==================== -->
+    <aside class="side-panel" id="favoritePanel">
+      <div class="panel-head">
+        <h3>Избранное</h3>
+        <button class="close-panel" data-close="favoritePanel">×</button>
+      </div>
+      <div class="panel-body" id="favoriteItems"></div>
+    </aside>
+
+    <!-- ==================== ПОИСК ==================== -->
+    <div class="search-modal" id="searchModal">
+      <div class="modal-inner">
+        <button class="close-panel" id="searchClose">×</button>
+        <p class="eyebrow">ПОИСК</p>
+        <h3>Найдите свой товар</h3>
+        <input
+          id="modalSearch"
+          type="search"
+          placeholder="Например: платок..."
+        />
+      </div>
+    </div>
+
+    <!-- ==================== ТОВАР ==================== -->
+    <div class="product-modal" id="productModal">
+      <div class="product-inner">
+        <button class="close-panel" id="productClose">×</button>
+        <div id="productDetails"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
