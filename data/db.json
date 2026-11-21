@@ -1,0 +1,467 @@
+{
+  "settings": {
+    "whatsapp": "992886006528",
+    "whatsappFormatted": "+992 88 600 65 28",
+    "instagram": "@hadidja_shop_tj",
+    "instagramUrl": "https://www.instagram.com/hadidja_shop_tj/",
+    "address": "г. Душанбе, Таджикистан",
+    "announcement": "✦ БЕСПЛАТНАЯ ДОСТАВКА ПО ДУШАНБЕ ОТ 250 СОМОНИ · ПРИМЕРКА ПЕРЕД ОПЛАТОЙ · ЗАКАЗ В WHATSAPP",
+    "freeShippingThreshold": 250,
+    "currency": "сомони"
+  },
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "fullName": "Главный Администратор",
+      "role": "Владелец",
+      "createdAt": "2026-11-21T13:59:44.251Z",
+      "token": "0f7cfbc6f5b4c44ac365c8ec6e315d6551743110b14029d511f2fb77b551564b"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Шёлковый платок «Royal Silk»",
+      "category": "Платки",
+      "price": 120,
+      "oldPrice": 150,
+      "discount": 20,
+      "size": "120 × 120 см",
+      "material": "Натуральный шёлк Гирбишин",
+      "badge": "ХИТ",
+      "rating": 5,
+      "reviewsCount": 38,
+      "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85",
+      "description": "Эксклюзивный платок из натурального плотного шёлка гирбишин. Мягко драпируется, держит благородную форму и обладает лёгким жемчужным переливом.",
+      "colors": [
+        {
+          "name": "Чёрный графит",
+          "hex": "#1c1c1c",
+          "quantity": 6,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Шампань-беж",
+          "hex": "#ecd9c2",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Нежная пудра",
+          "hex": "#e7cbcf",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Платок «Dubai Satin Carré»",
+      "category": "Платки",
+      "price": 95,
+      "oldPrice": 120,
+      "discount": 21,
+      "size": "110 × 110 см",
+      "material": "Дубайский сатин-жаккард",
+      "badge": "СКИДКА",
+      "rating": 4.9,
+      "reviewsCount": 24,
+      "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=85",
+      "description": "Глянцевый атласный платок с изысканным восточным переливом. Идеален как для праздничного образа, так и на каждый день.",
+      "colors": [
+        {
+          "name": "Молочный перламутр",
+          "hex": "#f3ede3",
+          "quantity": 7,
+          "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Горький шоколад",
+          "hex": "#3e2723",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Глубокий чёрный",
+          "hex": "#111111",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Платок «Florence Monogram»",
+      "category": "Платки",
+      "price": 135,
+      "oldPrice": null,
+      "discount": 0,
+      "size": "120 × 120 см",
+      "material": "Итальянский твил",
+      "badge": "PREMIUM",
+      "rating": 5,
+      "reviewsCount": 19,
+      "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=85",
+      "description": "Коллекционная модель из шелковистого твила с аккуратной ручной обработкой края рулик (Hand Rolled).",
+      "colors": [
+        {
+          "name": "Крем-брюле",
+          "hex": "#e8dcce",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Королевский сапфир",
+          "hex": "#1a2c4e",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Палантин «Dubai Chiffon Stole»",
+      "category": "Шарфы",
+      "price": 110,
+      "oldPrice": 135,
+      "discount": 19,
+      "size": "185 × 75 см",
+      "material": "Премиальный дубайский шифон",
+      "badge": "ХИТ",
+      "rating": 4.9,
+      "reviewsCount": 42,
+      "image": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=85",
+      "description": "Лёгкий струящийся палантин из оригинального дубайского шифона. Не просвечивает при сложении, ложится воздушными складками.",
+      "colors": [
+        {
+          "name": "Песочный беж",
+          "hex": "#d8c5aa",
+          "quantity": 6,
+          "image": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Кофейный мокко",
+          "hex": "#634c3e",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Чёрный оникс",
+          "hex": "#141414",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Шарф «Soft Cashmere Touch»",
+      "category": "Шарфы",
+      "price": 105,
+      "oldPrice": null,
+      "discount": 0,
+      "size": "190 × 80 см",
+      "material": "Шёлк с кашемиром",
+      "badge": "NEW",
+      "rating": 5,
+      "reviewsCount": 15,
+      "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85",
+      "description": "Невероятно мягкий и уютный шарф с бархатистой текстурой под кашемир. Идеален для прохладных вечеров и осенне-весеннего сезона.",
+      "colors": [
+        {
+          "name": "Кремовая ваниль",
+          "hex": "#f5f0e6",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Дымчатый серый",
+          "hex": "#8c8c8c",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Тёплый тауп",
+          "hex": "#7a6a5a",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Хиджаб «Medina Silk»",
+      "category": "Хиджабы",
+      "price": 90,
+      "oldPrice": 115,
+      "discount": 22,
+      "size": "180 × 75 см",
+      "material": "Шёлк Медина (Турция)",
+      "badge": "ХИТ",
+      "rating": 5,
+      "reviewsCount": 56,
+      "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85",
+      "description": "Хит восточного гардероба. Знаменитый турецкий шёлк медина — абсолютно матовый, не скользит по волосам, не мнётся и пропускает воздух.",
+      "colors": [
+        {
+          "name": "Чёрный",
+          "hex": "#111111",
+          "quantity": 8,
+          "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Капучино",
+          "hex": "#c8b39b",
+          "quantity": 7,
+          "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Пыльная роза",
+          "hex": "#d4a9a9",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Хиджаб «Jersey Royal Luxe»",
+      "category": "Хиджабы",
+      "price": 85,
+      "oldPrice": null,
+      "discount": 0,
+      "size": "180 × 75 см",
+      "material": "Премиум Джерси Люкс",
+      "badge": "КОМФОРТ",
+      "rating": 4.9,
+      "reviewsCount": 31,
+      "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85",
+      "description": "Мягкий эластичный трикотаж джерси премиум качества. Идеально сидит без единой булавки, сохраняя безупречный комфорт на весь день.",
+      "colors": [
+        {
+          "name": "Белоснежный",
+          "hex": "#ffffff",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Песочно-бежевый",
+          "hex": "#cfbeaa",
+          "quantity": 6,
+          "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Тёмно-коричневый",
+          "hex": "#422e23",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Хиджаб «Chiffon Plissé»",
+      "category": "Хиджабы",
+      "price": 115,
+      "oldPrice": 140,
+      "discount": 18,
+      "size": "185 × 75 см",
+      "material": "Жатка-плиссе премиум",
+      "badge": "СКИДКА",
+      "rating": 5,
+      "reviewsCount": 18,
+      "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=85",
+      "description": "Фактурный хиджаб с элегантной мелкой плиссировкой. Не требует глажки, выглядит объемно и необычайно нарядно.",
+      "colors": [
+        {
+          "name": "Пыльная роза",
+          "hex": "#cda2a2",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Благородный изумруд",
+          "hex": "#224b3b",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Чёрный",
+          "hex": "#111111",
+          "quantity": 6,
+          "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Платье-Абайя «Grace Modest»",
+      "category": "Платья",
+      "price": 260,
+      "oldPrice": 320,
+      "discount": 19,
+      "size": "S / M / L / XL",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Дубайский креп премиум",
+      "badge": "ХИТ",
+      "rating": 5,
+      "reviewsCount": 29,
+      "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85",
+      "description": "Утонченное свободное платье-абайя с безупречной драпировкой и манжетами. Ткань не мнется, приятна к телу и дарит свободу движений.",
+      "colors": [
+        {
+          "name": "Чёрный оникс",
+          "hex": "#111111",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Тёплый песочный",
+          "hex": "#d5c4af",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Платье «Velvet Night»",
+      "category": "Платья",
+      "price": 310,
+      "oldPrice": 380,
+      "discount": 18,
+      "size": "S / M / L",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Королевский бархат",
+      "badge": "LUXURY",
+      "rating": 5,
+      "reviewsCount": 16,
+      "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85",
+      "description": "Роскошное вечернее закрытое платье из глубокого королевского бархата с мягким жемчужным переливом.",
+      "colors": [
+        {
+          "name": "Молочный крем",
+          "hex": "#f1ede4",
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Кофейный шоколад",
+          "hex": "#483226",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Платье «Dubai Silk Abaya»",
+      "category": "Платья",
+      "price": 340,
+      "oldPrice": 410,
+      "discount": 17,
+      "size": "M / L / XL",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Плотный дубайский шёлк",
+      "badge": "ЭКСКЛЮЗИВ",
+      "rating": 5,
+      "reviewsCount": 21,
+      "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85",
+      "description": "Эксклюзивная модель свободного кроя из тяжелого дубайского шёлка. Создает статный, элегантный силуэт высочайшего класса.",
+      "colors": [
+        {
+          "name": "Благородный бордо",
+          "hex": "#581825",
+          "quantity": 3,
+          "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Чёрный уголь",
+          "hex": "#141414",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Платье «Emerald Elegance»",
+      "category": "Платья",
+      "price": 290,
+      "oldPrice": null,
+      "discount": 0,
+      "size": "S / M / L / XL",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Плотный турецкий трикотаж",
+      "badge": "NEW",
+      "rating": 4.9,
+      "reviewsCount": 14,
+      "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=85",
+      "description": "Элегантное закрытое платье в пол со съёмным поясом. Превосходно садится по фигуре, не сковывая движений.",
+      "colors": [
+        {
+          "name": "Глубокий изумруд",
+          "hex": "#194334",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Чёрный бархат",
+          "hex": "#111111",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Подарочный бокс «Hadidja Royal Box»",
+      "category": "Аксессуары",
+      "price": 165,
+      "oldPrice": 200,
+      "discount": 18,
+      "size": "Luxury Box Set",
+      "material": "Шёлк + Магнитные булавки + Шапочка",
+      "badge": "ПОДАРОК",
+      "rating": 5,
+      "reviewsCount": 33,
+      "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=85",
+      "description": "Идеальный подарок в фирменной золотой коробке: шёлковый платок, 4 пары ультра-прочных магнитных булавок и хлопковая шапочка-подхиджабник.",
+      "colors": [
+        {
+          "name": "Золотистый сет",
+          "hex": "#c5a880",
+          "quantity": 5,
+          "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=85"
+        },
+        {
+          "name": "Чёрный нуар",
+          "hex": "#111111",
+          "quantity": 4,
+          "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=85"
+        }
+      ]
+    }
+  ],
+  "orders": []
+}
