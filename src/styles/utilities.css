@@ -1,0 +1,142 @@
+/*
+ * HADIDJA.SHOP — Tailwind CSS 4 compatibility utilities.
+ * Keep these inside the utilities layer so they do not override component
+ * defaults globally. Alpha variants change only the color, never element opacity.
+ */
+@layer utilities {
+  /* Brand backgrounds */
+  .bg-noir { background-color: var(--noir); }
+  .bg-noir-bg { background-color: var(--noir); }
+  .bg-noir-soft { background-color: var(--noir-soft); }
+  .bg-noir-card { background-color: var(--noir-card); }
+  .bg-noir-border { background-color: var(--noir-border); }
+  .bg-background { background-color: var(--color-bg); }
+  .bg-foreground { background-color: var(--color-fg); }
+  .bg-card { background-color: var(--color-card); }
+  .bg-card-foreground { background-color: var(--color-card-fg); }
+  .bg-border { background-color: var(--color-border); }
+  .bg-input { background-color: var(--color-input); }
+  .bg-muted { background-color: var(--color-muted); }
+  .bg-silk-bg { background-color: var(--silk-bg); }
+  .bg-silk-surface { background-color: var(--silk-surface); }
+  .bg-silk-card { background-color: var(--silk-card); }
+  .bg-silk-border { background-color: var(--silk-border); }
+  .bg-whatsapp { background-color: var(--whatsapp); }
+  .bg-whatsapp-dark { background-color: var(--whatsapp-dark); }
+  .bg-gold-primary { background-color: var(--gold-primary); }
+  .bg-gold-light { background-color: var(--gold-light); }
+  .bg-gold-dark { background-color: var(--gold-dark); }
+  .bg-gold-gradient { background-image: var(--gold-gradient); }
+
+  /* Legacy Tailwind v3 background-opacity compatibility */
+  .bg-opacity-90 {
+    background-color: color-mix(in srgb, var(--noir) 90%, transparent);
+  }
+
+  /* Background alpha helpers — do not set opacity on the whole element */
+  .bg-noir\/15 { background-color: color-mix(in srgb, var(--noir) 15%, transparent); }
+  .bg-noir\/30 { background-color: color-mix(in srgb, var(--noir) 30%, transparent); }
+  .bg-noir\/40 { background-color: color-mix(in srgb, var(--noir) 40%, transparent); }
+  .bg-noir\/50 { background-color: color-mix(in srgb, var(--noir) 50%, transparent); }
+  .bg-noir\/60 { background-color: color-mix(in srgb, var(--noir) 60%, transparent); }
+  .bg-noir\/70 { background-color: color-mix(in srgb, var(--noir) 70%, transparent); }
+  .bg-noir\/75 { background-color: color-mix(in srgb, var(--noir) 75%, transparent); }
+  .bg-noir\/80 { background-color: color-mix(in srgb, var(--noir) 80%, transparent); }
+  .bg-noir\/90 { background-color: color-mix(in srgb, var(--noir) 90%, transparent); }
+  .bg-noir\/95 { background-color: color-mix(in srgb, var(--noir) 95%, transparent); }
+
+  .bg-gold-primary\/5 { background-color: color-mix(in srgb, var(--gold-primary) 5%, transparent); }
+  .bg-gold-primary\/10 { background-color: color-mix(in srgb, var(--gold-primary) 10%, transparent); }
+  .bg-gold-primary\/15 { background-color: color-mix(in srgb, var(--gold-primary) 15%, transparent); }
+  .bg-gold-primary\/20 { background-color: color-mix(in srgb, var(--gold-primary) 20%, transparent); }
+  .bg-gold-primary\/25 { background-color: color-mix(in srgb, var(--gold-primary) 25%, transparent); }
+  .bg-gold-primary\/30 { background-color: color-mix(in srgb, var(--gold-primary) 30%, transparent); }
+  .bg-gold-primary\/40 { background-color: color-mix(in srgb, var(--gold-primary) 40%, transparent); }
+  .bg-gold-primary\/50 { background-color: color-mix(in srgb, var(--gold-primary) 50%, transparent); }
+  .bg-gold-primary\/60 { background-color: color-mix(in srgb, var(--gold-primary) 60%, transparent); }
+  .bg-gold-primary\/70 { background-color: color-mix(in srgb, var(--gold-primary) 70%, transparent); }
+  .bg-gold-primary\/80 { background-color: color-mix(in srgb, var(--gold-primary) 80%, transparent); }
+  .bg-gold-primary\/90 { background-color: color-mix(in srgb, var(--gold-primary) 90%, transparent); }
+
+  .bg-whatsapp\/5 { background-color: color-mix(in srgb, var(--whatsapp) 5%, transparent); }
+  .bg-whatsapp\/10 { background-color: color-mix(in srgb, var(--whatsapp) 10%, transparent); }
+  .bg-silk-bg\/10 { background-color: color-mix(in srgb, var(--silk-bg) 10%, transparent); }
+
+  /* Text colors */
+  .text-noir { color: var(--noir); }
+  .text-gold-primary { color: var(--gold-primary); }
+  .text-gold-dark { color: var(--gold-dark); }
+  .text-gold-light { color: var(--gold-light); }
+  .text-whatsapp { color: var(--whatsapp); }
+  .text-whatsapp-dark { color: var(--whatsapp-dark); }
+
+  /* Border alpha helpers — only the border becomes transparent */
+  .border-gold-primary { border-color: var(--gold-primary); }
+  .border-gold-primary\/20 { border-color: color-mix(in srgb, var(--gold-primary) 20%, transparent); }
+  .border-gold-primary\/30 { border-color: color-mix(in srgb, var(--gold-primary) 30%, transparent); }
+  .border-gold-primary\/40 { border-color: color-mix(in srgb, var(--gold-primary) 40%, transparent); }
+  .border-gold-primary\/50 { border-color: color-mix(in srgb, var(--gold-primary) 50%, transparent); }
+  .border-silk-border { border-color: var(--silk-border); }
+  .border-whatsapp\/40 { border-color: color-mix(in srgb, var(--whatsapp) 40%, transparent); }
+  .border-silk-bg\/20 { border-color: color-mix(in srgb, var(--silk-bg) 20%, transparent); }
+
+  /* Legacy gradient direction classes used by the existing React pages */
+  .bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); }
+  .bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+  .bg-gradient-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops)); }
+
+  /* Brand shadows */
+  .shadow-gold { box-shadow: 0 8px 25px rgba(197, 168, 128, 0.25); }
+  .shadow-gold-lg { box-shadow: 0 14px 40px rgba(197, 168, 128, 0.35); }
+
+  /* Small entrance animations used in dialogs and mobile navigation */
+  .animate-in.fade-in {
+    animation: hadidja-fade-in var(--tw-duration, 200ms) ease-out both;
+  }
+  .animate-in.fade-in.zoom-in-95 {
+    animation: hadidja-zoom-in var(--tw-duration, 200ms) ease-out both;
+  }
+  .animate-in.slide-in-from-left {
+    animation: hadidja-slide-in-left var(--tw-duration, 300ms) ease-out both;
+  }
+
+  @keyframes hadidja-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes hadidja-zoom-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes hadidja-slide-in-left {
+    from { opacity: 0; transform: translateX(-16px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Dark theme contrast fixes
+   These explicit selectors keep dark-mode action buttons readable even when
+   Tailwind's dark variant is not emitted by the current Vite/Tailwind setup.
+   -------------------------------------------------------------------------- */
+html.dark .dark\:bg-gold-primary {
+  background-color: var(--gold-primary) !important;
+}
+
+html.dark .dark\:text-noir {
+  color: var(--noir) !important;
+}
+
+/* Keep the cart icon and label clearly visible on the dark header/navigation. */
+html.dark header a[href="/cart"],
+html.dark nav a[href="/cart"] {
+  color: var(--gold-light) !important;
+}
+
+html.dark header a[href="/cart"] svg,
+html.dark nav a[href="/cart"] svg {
+  color: inherit !important;
+  stroke: currentColor !important;
+}
