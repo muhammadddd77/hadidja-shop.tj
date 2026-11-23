@@ -29,7 +29,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const initAuth = async () => {
       try {
         if (!isSupabaseConfigured()) {
-          // Read local session if testing without env keys
           const local = localStorage.getItem("hadidja_local_session");
           if (local && mounted) {
             const { user: localProf } = JSON.parse(local);
@@ -55,7 +54,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     initAuth();
 
-    // Listen to Supabase Auth State changes
     if (isSupabaseConfigured()) {
       const { data: authListener } = supabase.auth.onAuthStateChange(
         async (event, session) => {
@@ -85,6 +83,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signIn = async (email: string, pass: string) => {
     const res = await authService.signIn(email, pass);
+
+    if (!res.profile) {
+      throw new Error("Профиль пользователя не найден. Проверьте аккаунт в Supabase.");
+    }
+
     setUser(res.user);
     setProfile(res.profile);
     return { role: res.profile.role, profile: res.profile };
@@ -92,6 +95,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signUp = async (email: string, pass: string, name: string, phone: string = "") => {
     const res = await authService.signUp(email, pass, name, phone);
+
+    // With email confirmation enabled, Supabase may create the account
+    // without starting a session. In that case profile access is blocked by RLS.
+    if (!res.profile) {
+      setUser(null);
+      setProfile(null);
+      throw new Error(
+        "Аккаунт создан, но вход пока не выполнен. Подтвердите email по письму от Supabase. Если письмо не пришло, нужно настроить SMTP."
+      );
+    }
+
     setUser(res.user);
     setProfile(res.profile);
     return { role: res.profile.role, profile: res.profile };
